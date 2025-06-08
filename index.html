@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TNEA College Predictor</title>
+  <meta name="description" content="Enter Your TNEA Cutoff marks, Category , Interested Branches and Predict the best Colleges For your TNEA cutoff 2025 based on 2024 Data">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="jkvhN2x1tt22Fs40-AIdHZ7djpzUY_iVJ6pw5kwj3KI" />
+  <!-- inside <head> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TNEA College Predictor</h1>
+    <form id="predictForm">
+      <label for="cutoff">Your Cutoff:</label>
+      <input type="number" step="0.1" id="cutoff" name="cutoff" required />
+
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="">--Select--</option>
+        <option value="OC">OC</option>
+        <option value="BC">BC</option>
+        <option value="BCM">BCM</option>
+        <option value="MBC">MBC</option>
+        <option value="SC">SC</option>
+        <option value="SCA">SCA</option>
+        <option value="ST">ST</option>
+      </select>
+
+      <label for="entries">Number of Entries:</label>
+      <input type="number" id="entries" name="entries" required />
+
+      <label for="branches">Select Branches:</label>
+      <select id="branches" name="branches" multiple required></select>
+
+      <button type="submit">Predict Colleges</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+  <div class="disclaimer">
+        <p><strong>Disclaimer:</strong> Please note that the cutoff data displayed here is based on previous years' information. This data is provided for reference purposes only and should not be considered a guarantee of future cutoff trends. Actual cutoff marks for the current year may vary.</p>
+    </div>
+  <!-- at bottom before </body> -->
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
