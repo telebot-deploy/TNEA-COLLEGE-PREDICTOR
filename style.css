@@ -1,0 +1,84 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #004c8c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #004c8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0066b2;
+}
+
+#results {
+  margin-top: 30px;
+}
+
+.college-card {
+  padding: 15px;
+  border-left: 5px solid #004c8c;
+  background-color: #f0f4f8;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.disclaimer {
+  margin-top: 20px; /* Add some space above the disclaimer */
+  padding: 15px; /* Add padding around the text */
+  background-color: #f8f8f8; /* A light gray background */
+  border-top: 1px solid #eee; /* A subtle top border */
+  font-size: 0.9em;
+  color: #777;
+  text-align: center;
+}
+
+.disclaimer strong {
+  color: #333;
+}
